@@ -2,7 +2,7 @@
 
 <div align="center">
   <br/>
-  <h3><b>SetUp Linters</b></h3>
+  <h3><b>My Portfolio</b></h3>
 </div>
 
 <!-- TABLE OF CONTENTS -->
@@ -28,9 +28,9 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [set_up_linter] <a name="about-project"></a>
+# 📖 [mobile-portfolio] <a name="about-project"></a>
 
-**[set_up_linter]** is a website with linter checking
+**[mobile-portfolio]** is a website that shows my projects, personal information, skills and languages and my contacts. It is build using HTML and CSS.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -47,7 +47,8 @@
 
 ### Key Features <a name="key-features"></a>
 
-- **[linter_support]**
+- **[responsive]**
+- **[nice_UI]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -75,12 +76,12 @@ nodejs version 18 or greater
 ### Setup
 
 Clone this repository to your desired folder:
-  git clone https://github.com/Lawmsangi/hello-microverse.git
+  git clone https://github.com/Lawmsangi/my-portfolio.git
 
 ### Install
 
 Install this project with:
-  cd hello-microverse
+  cd my-portfolio
   npm install
 
 ### Usage
@@ -107,7 +108,9 @@ To run the project, execute the following command:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **[no_new_feature]**
+- [ ] **[portfolio-section]**
+- [ ] **[about-section]**
+- [ ] **[contact-section]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
