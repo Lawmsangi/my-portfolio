@@ -71,6 +71,7 @@
   box-sizing: border-box;
   padding-right: 30px;
   padding-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .skillList-name h3 {
@@ -136,6 +137,13 @@
 }
 
 .about-content button:hover {
-  background: #396df2;
+  background: #6070ff;
+  box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
   color: #fff;
+}
+
+.about-content button:active {
+  border: 1px solid #7f8cff;
+  color: #fff;
+  background: #2230d2;
 }
