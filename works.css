@@ -58,6 +58,8 @@
 }
 
 .card-list2 li {
+  float: left;
+  margin-right: 10px;
   background-color: #ebefff;
   border-radius: 10px;
   padding: 3px 10px;
@@ -76,6 +78,7 @@
   padding: 8px;
   border: 1px solid #7f8cff;
   cursor: pointer;
+
 }
 
 .card-content button:hover {
