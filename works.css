@@ -51,7 +51,7 @@
 }
 
 .card-list2 {
-  display: flex;
+  float: left;
   list-style: none;
   gap: 10px;
   padding: 10px 0;
