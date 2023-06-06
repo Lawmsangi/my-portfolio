@@ -40,6 +40,7 @@
   <summary>Client</summary>
   <ul>
     <li><a href="#">HTML</a></li>
+    <li><a href="#">CSS</a></li>
   </ul>
 </details>
 
