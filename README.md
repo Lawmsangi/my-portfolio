@@ -54,10 +54,6 @@
 
 <!-- LIVE DEMO -->
 
-## 🚀 Live Demo <a name="live-demo"></a>
-
-- [Live Demo Link](coming soon)
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- GETTING STARTED -->
@@ -108,7 +104,9 @@ To run the project, execute the following command:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **[contact-section]**
+- Add popup details for the project👌.
+- Add more styling like animation 💯.
+- Add mobile menu for the responsive header navs🚀.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
