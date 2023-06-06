@@ -34,3 +34,73 @@ contact-me{
     color: #ebebff;
     text-align: center;
 }
+
+.contact-content form{
+    width: 100%;
+    height: 345px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-content form li{
+    list-style: none;
+}
+
+.contact-content form input{
+    width: 327px;
+    height: 48px;
+    gap: 10px;
+    border-radius: 8px;
+    border: 1px solid #CFD8DC;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    font-size: 17px;
+}
+
+.contact-content form textarea{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  width: 327px;
+  height: 170px;
+  padding: 10px 12px;
+  box-sizing: border-box;
+  border: 1px solid #CFD8DC;
+  border-radius: 8px;
+  font-size: 15px;
+  line-height: 24px;
+  resize: none;
+}
+
+.contact-content button {
+  color: #396df2;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  letter-spacing: 3%;
+  background: #fff;
+  width: fit-content;
+  border-radius: 10px 10px;
+  padding: 10px;
+  border: 1px solid #396df2;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.contact-content form button:hover {
+  background: #6070ff;
+  box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
+  color: #fff;
+   border: 1px solid #fff;
+}
+
+.contact-content form button:active {
+  border: 1px solid #7f8cff;
+  color: #fff;
+  background: #2230d2;
+}
+
+.contact-content form button {
+  background-color: #fff;
+  border: none;
+}
