@@ -47,8 +47,10 @@
 
 ### Key Features <a name="key-features"></a>
 
-- **[responsive]**
-- **[nice_UI]**
+- Use the Figma design for the project😊👌
+- Use the semantics elements💯
+- Use the validation HTML for the form .🚀
+- Use Form spree for the contact form 😃👍
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
