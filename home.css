@@ -31,7 +31,16 @@ body {
 .header a img {
   height: 60px;
   width: 60px;
-  background-color: transparent;
+  animation: rotateOnce 1s ease-in-out;
+}
+
+@keyframes rotateOnce {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 .header nav img {
