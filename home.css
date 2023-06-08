@@ -40,7 +40,7 @@ body {
   width: 60px;
 }
 
-.header nav ul{
+.header nav ul {
   display: none;
 }
 
@@ -98,32 +98,38 @@ main {
   height: 25px;
 }
 
-
-@media screen and (min-width: 768px)  {
-  .header{
+@media screen and (min-width: 768px) {
+  .header {
     max-width: 100%;
-    padding:  30px 10%;
+    padding: 30px 10%;
   }
 
-  .header nav img{
+  .header nav img {
     display: none;
   }
 
-  .header nav ul{
+  .icons li,
+  .icons li a,
+  .icons li a img {
+    width: 25px;
+    height: 25px;
+  }
+
+  .header nav ul {
     display: flex;
     list-style: none;
     gap: 20px;
   }
 
-  .header nav ul li:hover{
+  .header nav ul li:hover {
     transform: scale(1.5);
   }
 
-  main{
+  main {
     max-width: 100%;
   }
 
-  .home{
+  .home {
     justify-content: center;
     gap: 25px;
     background: url('images/desktop-image-bg.png');
@@ -134,14 +140,14 @@ main {
     padding: 0 10%;
   }
 
-    .home h1 {
-      font-size: 48px;
-      line-height: 60px;
-      letter-spacing: 0.37px;
-      width: 70%;
-    }
+  .home h1 {
+    font-size: 48px;
+    line-height: 60px;
+    letter-spacing: 0.37px;
+    width: 70%;
+  }
 
-  .home p{
+  .home p {
     font-size: 20px;
     line-height: 28px;
   }
@@ -150,43 +156,17 @@ main {
     font-weight: 500px;
     font-size: 16px;
     line-height: 24px;
-}
-
-  .home h2:hover{
-    transform: translate(20px, -10px)
   }
 
-    .icons {
+  .home h2:hover {
+    transform: translate(20px, -10px);
+  }
+
+  .icons {
     width: 50%;
     height: 30px;
     display: flex;
     list-style: none;
     gap: 10px;
   }
-
-  .icons li,
-.icons li a,
-.icons li a img {
-  width: 25px;
-  height: 25px;
 }
-
-}
-/* 
-@media screen and (min-width: 768px) and (max-width: 1500px) {
-  .home{
-    padding: 20% 25% 10% 20%;
-  }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1200px) {
-  .home{
-    padding: 25% 25% 10% 20%;
-  }
-}
-
-@media screen and (min-width: 768px) and (max-width: 900px) {
-  .home{
-    padding: 30% 25% 10% 20%;
-  }
-} */

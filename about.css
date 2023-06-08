@@ -163,6 +163,7 @@
 
   .about-skills {
     flex: 0.6;
+    padding: 0 1%;
   }
 
   .about-content h2 {
@@ -175,10 +176,6 @@
     line-height: 24px;
   }
 
-  .about-skills {
-    padding: 0 1%;
-  }
-
   .skill-languages {
     flex-direction: row;
     gap: 10px;
@@ -188,6 +185,7 @@
     flex-direction: column;
     height: 120px;
     width: 122px;
+    align-items: flex-start;
   }
 
   .skillList-name {
