@@ -56,6 +56,7 @@
   margin-bottom: 10px;
   padding-left: 10px;
   font-size: 17px;
+  line-height: 20px;
 }
 
 .contact-content form textarea {
@@ -72,7 +73,7 @@
   resize: none;
 }
 
-.contact-content button {
+.contact-content form button {
   color: #396df2;
   font-weight: 500;
   font-size: 17px;
@@ -80,16 +81,12 @@
   letter-spacing: 3%;
   background: #fff;
   width: fit-content;
-  border-radius: 10px 10px;
+  border-radius: 8px;
   padding: 10px;
   border: 1px solid #396df2;
   cursor: pointer;
-  margin-top: 10px;
-}
-
-.contact-content form button {
-  background-color: #fff;
   border: none;
+  margin-top: 10px;
 }
 
 .contact-content form button:hover {
@@ -103,4 +100,38 @@
   border: 1px solid #7f8cff;
   color: #fff;
   background: #2230d2;
+}
+
+@media screen and (min-width: 768px) {
+  .contact-container {
+    background-image: url(images/desktop-contact-bg.png);
+  }
+
+  .contact-content {
+    gap: 22px;
+    padding: 10% 10% 10% 10%;
+    box-sizing: border-box;
+  }
+
+  .contact-content p {
+    max-width: 600px;
+  }
+
+  .contact-content form input {
+    width: 447px;
+    height: 48px;
+    gap: 10px;
+    border-radius: 2px;
+  }
+
+  .contact-content form textarea {
+    width: 447px;
+    border-radius: 2px;
+  }
+
+  .contact-content form ul li.centered-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
