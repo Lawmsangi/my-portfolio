@@ -83,6 +83,10 @@ main {
   color: #7f8cff;
 }
 
+.home h2:hover {
+  transform: translate(30px);
+}
+
 .icons {
   width: 50%;
   height: 30px;
@@ -115,9 +119,6 @@ main {
     gap: 20px;
   }
 
-  .header nav ul li:hover{
-    transform: scale(1.5);
-  }
 
   main{
     max-width: 100%;
@@ -131,7 +132,7 @@ main {
     background-size: 100% 85vh;
     background-color: #fff;
     border-bottom-left-radius: 200px;
-    padding: 0 10%;
+    padding: 0 20%;
   }
 
     .home h1 {
@@ -144,6 +145,7 @@ main {
   .home p{
     font-size: 20px;
     line-height: 28px;
+    width: 90%;
   }
 
   .home h2 {
@@ -152,24 +154,14 @@ main {
     line-height: 24px;
 }
 
-  .home h2:hover{
-    transform: translate(20px, -10px)
-  }
-
     .icons {
     width: 50%;
     height: 30px;
     display: flex;
     list-style: none;
-    gap: 10px;
+    gap: 20px;
   }
 
-  .icons li,
-.icons li a,
-.icons li a img {
-  width: 25px;
-  height: 25px;
-}
 
 }
 /* 
