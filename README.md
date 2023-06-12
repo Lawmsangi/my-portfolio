@@ -57,6 +57,9 @@
 
 <!-- LIVE DEMO -->
 
+## 🚀 Live Demo <a name="live-demo"></a>
+- [Live Demo Link](https://lawmsangi.github.io/my-portfolio/)
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- GETTING STARTED -->
