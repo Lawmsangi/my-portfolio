@@ -2,6 +2,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
 }
 
 body {
@@ -13,7 +15,7 @@ body {
 .header {
   display: flex;
   justify-content: space-between;
-  height: 10vh;
+  height: 15vh;
   max-width: 768px;
   min-width: 375px;
   padding: 20px;
@@ -42,6 +44,58 @@ body {
 
 .header nav ul {
   display: none;
+}
+
+/* mobile-menu */
+#mobile-menu-bg {
+  display: none;
+  position: absolute;
+  background: #6070FF;
+  mix-blend-mode: multiply; 
+  max-width: 768px;
+  min-width: 375px;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  padding: 20px;
+}
+
+#mobile-menu {
+  display: none;
+  position: absolute;
+  background: #6070ff;
+  mix-blend-mode: multiply; 
+  max-width: 768px;
+  min-width: 375px;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  padding: 20px;
+  z-index: 1;
+}
+
+#mobile-menu ul {
+  padding: 40px;
+}
+
+#mobile-menu ul li {
+  padding: 10px;
+}
+
+#mobile-menu ul li a {
+  color: #fff;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 44px;
+}
+
+#mobile-menu-close {
+  float: right;
+  background: transparent;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  font-size: 18px;
 }
 
 main {
