@@ -12,12 +12,21 @@
     <title>My portfolio</title>
 </head>
 <body>
-    <header class="header">
+    <div id="mobile-menu-bg"></div>
+    <div id="mobile-menu">
+        <button id="mobile-menu-close">X</button>
+        <ul>
+            <li><a href="#work-section">Portfolio</a></li>
+            <li><a href="#about-section">About</a></li>
+            <li><a href="#contact-section">Contact</a></li>
+        </ul>
+    </div>
+    <header class="header" id="header">
         <a href="#">
             <img src="images/logo.png" alt="logo">
         </a>
         <nav href="#">
-            <img src="images/Union.png" alt="union">
+            <img src="images/Union.png" alt="union" id="union-btn">
             <ul>
                 <li>Portfolio</li>
                 <li>About</li>
@@ -226,7 +235,7 @@
             </ul>
         </section>
 
-        <section class="contact-me" id="contact-me">
+        <section class="contact-me" id="contact-section">
             <div class="contact-container">
                 <div class="contact-content">
                     <h2>Contact me</h2>
@@ -254,7 +263,7 @@
                 </div>
             </div>
         </section>
-
+        <script src="index.js"></script>
     </main>
 </body>
 </html>
