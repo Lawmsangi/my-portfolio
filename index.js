@@ -9,8 +9,8 @@ btn.addEventListener('click', function(){
     menu.style.display ='block';
     menuBg.style.display = 'block';
     document.body.style.overflow = 'hidden';
-    home.style.filter = 'blur(8px)';
-    header.style.filter = 'blur(8px)';
+    home.style.filter = 'blur(9px)';
+    header.style.filter = 'blur(9px)';
 })
 
  function closedMenu(){

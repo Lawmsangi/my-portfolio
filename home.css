@@ -46,12 +46,20 @@ body {
   display: none;
 }
 
+.icons li,
+.icons li a,
+.icons li a img {
+  width: 25px;
+  height: 25px;
+}
+
+
 /* mobile-menu */
 #mobile-menu-bg {
   display: none;
   position: absolute;
-  background: #6070FF;
-  mix-blend-mode: multiply; 
+  background: #6070ff;
+  mix-blend-mode: multiply;
   max-width: 768px;
   min-width: 375px;
   top: 0;
@@ -64,7 +72,7 @@ body {
   display: none;
   position: absolute;
   background: #6070ff;
-  mix-blend-mode: multiply; 
+  mix-blend-mode: multiply;
   max-width: 768px;
   min-width: 375px;
   top: 0;
@@ -143,13 +151,6 @@ main {
   display: flex;
   list-style: none;
   gap: 10px;
-}
-
-.icons li,
-.icons li a,
-.icons li a img {
-  width: 25px;
-  height: 25px;
 }
 
 @media screen and (min-width: 768px) {
