@@ -22,3 +22,4 @@ btn.addEventListener('click', function(){
 }
 close.addEventListener('click', closedMenu)
 
+menu.addEventListener('click', closedMenu) 
