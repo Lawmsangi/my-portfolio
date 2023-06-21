@@ -101,6 +101,13 @@
   background: #2230d2;
 }
 
+#error-msg {
+  color: red;
+  font-size: 1.2rem;
+  font-weight: 500;
+  visibility: hidden;
+}
+
 @media screen and (min-width: 768px) {
   .contact-container {
     background-image: url(images/desktop-contact-bg.png);
