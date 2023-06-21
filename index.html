@@ -8,13 +8,16 @@
     <link rel="stylesheet" href="works.css">
     <link rel="stylesheet" href="about.css">
     <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="project.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
     <title>My portfolio</title>
 </head>
 <body>
-    <div id="mobile-menu-bg"></div>
-    <div id="mobile-menu">
-        <button id="mobile-menu-close">X</button>
+
+    <div id="menu-bg"></div>
+    <div id="menu">
+        <button id="menu-close">X</button>
         <ul>
             <li><a href="#work-section">Portfolio</a></li>
             <li><a href="#about-section">About</a></li>
@@ -26,7 +29,7 @@
             <img src="images/logo.png" alt="logo">
         </a>
         <nav href="#">
-            <img src="images/Union.png" alt="union" id="union-btn">
+            <img src="images/Union.png" alt="union" id="btn-union">
             <ul>
                 <li>Portfolio</li>
                 <li>About</li>
@@ -79,7 +82,7 @@
                         <li>css</li>
                         <li>javaScript</li>
                     </ul>
-                    <button type="button">See Project</button>
+                    <button class="card-btn">See Project</button>
                 </div>
             </div>
 
@@ -90,25 +93,25 @@
                 <div class="card-content">
                     <h2>Multi-Post Stories</h2>
                     <ul class="card-list1">
-                        <li>CANOPY</li>
+                        <li>FACEBOOK</li>
                         <li><svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <circle cx="4" cy="4" r="4" fill="#C1C7D0"></circle>
                             </svg>
                         </li>
-                        <li>Back End Dev</li>
+                        <li>Full Stack Dev</li>
                         <li><svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <circle cx="4" cy="4" r="4" fill="#C1C7D0"></circle>
                             </svg>
                         </li>
                         <li>2015</li>
                     </ul>
-                    <p>A daily selection of privately personalized reads; no accounts or sign-ups required.</p>
+                    <p>Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.</p>
                     <ul class="card-list2">
                         <li>html</li>
+                        <li>ruby on rails</li>
                         <li>css</li>
-                        <li>javaScript</li>
                     </ul>
-                    <button type="button">See Project</button>
+                    <button class="card-btn">See Project</button>
                 </div>
             </div>
 
@@ -117,9 +120,9 @@
                     <img src="images/work-3.png" alt="work-1">
                 </div>
                 <div class="card-content">
-                    <h2>Tonic</h2>
+                    <h2>Facebook 360</h2>
                     <ul class="card-list1">
-                        <li>CANOPY</li>
+                        <li>FACEBOOK</li>
                         <li><svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <circle cx="4" cy="4" r="4" fill="#C1C7D0"></circle>
                             </svg>
@@ -131,13 +134,13 @@
                         </li>
                         <li>2015</li>
                     </ul>
-                    <p>A daily selection of privately personalized reads; no accounts or sign-ups required.</p>
+                    <p>Exploring the future of media in Facebook's first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.</p>
                     <ul class="card-list2">
                         <li>html</li>
+                        <li>Ruby on rails</li>
                         <li>css</li>
-                        <li>javaScript</li>
                     </ul>
-                    <button type="button">See Project</button>
+                    <button class="card-btn">See Project</button>
                 </div>
             </div>
 
@@ -146,27 +149,27 @@
                     <img src="images/work-4.png" alt="work-1">
                 </div>
                 <div class="card-content">
-                    <h2>Multi-Post Stories</h2>
+                    <h2>Uber Navigation</h2>
                     <ul class="card-list1">
-                        <li>CANOPY</li>
+                        <li>Uber</li>
                         <li><svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <circle cx="4" cy="4" r="4" fill="#C1C7D0"></circle>
                             </svg>
                         </li>
-                        <li>Back End Dev</li>
+                        <li>Lead Developer</li>
                         <li><svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <circle cx="4" cy="4" r="4" fill="#C1C7D0"></circle>
                             </svg>
                         </li>
                         <li>2015</li>
                     </ul>
-                    <p>A daily selection of privately personalized reads; no accounts or sign-ups required.</p>
+                    <p>A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car.</p>
                     <ul class="card-list2">
                         <li>html</li>
+                        <li>Ruby on rails</li>
                         <li>css</li>
-                        <li>javaScript</li>
                     </ul>
-                    <button type="button">See Project</button>
+                    <button class="card-btn">See Project</button>
                 </div>
             </div>
         </section>
@@ -188,14 +191,15 @@
                     <li><a href=""><img src="images/Mail-icon.png" alt=""></a></li>
                     
                 </ul>
-                <button type="button">Get my resume</button>
+                <button>Get my resume</button>
             </div>
 
+            
             <ul class="about-skills">
                 <li>
                     <div class="skillList-name">
                         <h3>Languages</h3>
-                        <button type="button">
+                        <button>
                             <img src="images/unionBtn.png" alt="">
                         </button>
                     </div>
@@ -219,7 +223,7 @@
                 <li>
                     <div class="skillList-name skillList-name2">
                         <h3>Frameworks</h3>
-                        <button type="button">
+                        <button>
                             <img src="images/arrowBtn.png" alt="">
                         </button>
                     </div>
@@ -227,7 +231,7 @@
                 <li>
                     <div class="skillList-name skillList-name2">
                         <h3>Skills</h3>
-                        <button type="button">
+                        <button>
                             <img src="images/arrowBtn.png" alt="">
                         </button>
                     </div>
@@ -255,7 +259,7 @@
                             </li>
 
                             <li class="centered-button">
-                                <button type="button">Get in touch</button>
+                                <button>Get in touch</button>
                             </li>
                         </ul>
                         
@@ -263,7 +267,9 @@
                 </div>
             </div>
         </section>
-        <script src="index.js"></script>
+
     </main>
+
+    <script src="index.js"></script>
 </body>
 </html>

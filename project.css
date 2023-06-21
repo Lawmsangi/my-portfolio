@@ -1,5 +1,17 @@
+::-webkit-scrollbar {
+  width: 0.5em;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: transparent;
+}
+
 .project-card-container {
-    width: 100%;
+    width: 90%;
     position: fixed;
     top: 0;
     margin: 5%;
@@ -53,9 +65,10 @@
 
 .project-card-content2 img {
     object-fit: cover;
-    width: 100%;
-    
-    padding: 100px;
+    max-width: 100%;
+    max-height: 600px;
+    padding: 10px;
+  
 }
 
 .project-card-content3 {
@@ -138,19 +151,27 @@
         color: #172B4D;
     }
 
+    .project-card-content2 img {
+        object-fit: cover;
+        max-width: 100%;
+        max-height: 600px;
+        padding: 10px;
+}   
+
+
     .project-card-content3 {
         display: flex;
       flex-direction: row;
-      gap: 30px;
+      gap: 10px;
       padding: 10px;
     }
 
     .project-card-content3 p {
         font-size: 16px;
         line-height: 30px;
-        
-    padding-bottom: 70px;
+    padding-bottom: 50px;
     }
+    
 
     .project-card-content3-text {
     flex: 0.7;

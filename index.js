@@ -22,7 +22,7 @@ const projects = [
     details: ["Facebook","Full&nbsp;Stack&nbsp;Dev", "2015"],
     description:
         "Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.",
-    languages: ["html","Ruby on rails", "css", "javascript"],
+    languages: ["html","Ruby on rails", "css"],
     images: 'images/work-2.png',
     live: '#',
     source: '',
@@ -32,7 +32,7 @@ const projects = [
     details: ["FACEBOOK", "Back&nbsp;End&nbsp;Dev", "2015"],
     description:
         "Exploring the future of media in Facebook's first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.",
-    languages: ["html", "Ruby on rails" ,"css", "javascript"],
+    languages: ["html", "Ruby on rails" ,"css"],
     images: 'images/work-3.png',
     live: '#',
     source: '',
@@ -42,7 +42,7 @@ const projects = [
     details: ["Uber", "Lead&nbsp;Developer", "2015"],
     description:
         "A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car.",
-    languages: ["html","Ruby on rails", "css", "javascript"],
+    languages: ["html","Ruby on rails", "css"],
     images: 'images/work-4.png',
     live: '#',
     source: '',
@@ -72,11 +72,12 @@ menu.addEventListener('click', closedMenu)
 function closeProject() {
     const project = document.querySelector('.project-card-container');
     project.remove();
+    workSec.style.filter = 'blur(0)';
+    document.body.style.overflow = 'scroll';
 }
 
 function seeProject(index){
     const {title,details,languages,description,images,live,source} = projects[index];
-    console.log(title);
     const [details1,details2,details3] = details;
     const [languages1,languages2,languages3] = languages;
     const cardContainer = document.createElement('div');
@@ -120,7 +121,7 @@ function seeProject(index){
                                     </ul>
 
                                     <div class="btn-live-source">
-                                        <a href = ${live}>See Live <img src= "images/see-live.png"/></a>
+                                        <a href = ${live}>See Live <img src= "images/Icon.png"/></a>
                                         <a href= ${source}>See Source  <i class="fab fa-github"></i> </a>
                                     </div>
                                 </div>`
@@ -131,7 +132,6 @@ function seeProject(index){
     workSec.style.filter = 'blur(8px)';
     document.body.style.overflow = 'hidden'
     document.body.appendChild(cardContainer)
-    
     
 }
 
