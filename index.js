@@ -144,7 +144,6 @@ cardBtn.forEach((item, index) => {
 });
 
 // Validate form
-
 const form = document.querySelector('#contact-form');
 
 const isRequired = (value) => value !== '';
