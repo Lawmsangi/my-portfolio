@@ -13,6 +13,7 @@ const projects = [
     description:
         "A daily selection of privately personalized reads; no accounts or sign-ups required.",
     languages: ["html", "css", "javascript"],
+    images: 'images/work-1.png',
     live: '#',
     source: '#',
     },
@@ -22,6 +23,7 @@ const projects = [
     description:
         "Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.",
     languages: ["html","Ruby on rails", "css", "javascript"],
+    images: 'images/work-2.png',
     live: '#',
     source: '',
     },
@@ -31,6 +33,7 @@ const projects = [
     description:
         "Exploring the future of media in Facebook's first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.",
     languages: ["html", "Ruby on rails" ,"css", "javascript"],
+    images: 'images/work-3.png',
     live: '#',
     source: '',
     },
@@ -40,6 +43,7 @@ const projects = [
     description:
         "A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car.",
     languages: ["html","Ruby on rails", "css", "javascript"],
+    images: 'images/work-4.png',
     live: '#',
     source: '',
     },
@@ -71,10 +75,14 @@ function closeProject() {
 }
 
 function seeProject(index){
+    const {title,details,languages,description,images,live,source} = projects[index];
+    console.log(title);
+    const [details1,details2,details3] = details;
+    const [languages1,languages2,languages3] = languages;
     const cardContainer = document.createElement('div');
     cardContainer.className ='project-card-container'; 
     const cardContent1 = document.createElement('div');
-    cardContent1.innerHTML = '<h1> Heading</h1>';
+    cardContent1.innerHTML = `<h1>${title}</h1>`;
     const closedBtn = document.createElement('button');
     closedBtn.innerHTML = 'X';
     cardContent1.appendChild(closedBtn);
@@ -87,37 +95,33 @@ function seeProject(index){
     cardContent3.className = 'project-card-content3'; 
     cardContent2.innerHTML = `
                                 <ul>
-                                    <li>CANOPY</li>
+                                    <li>${details1}</li>
                                     <li><svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <circle cx="4" cy="4" r="4" fill="#C1C7D0"></circle>
                                         </svg>
                                     </li>
-                                    <li>Back End Dev</li>
+                                    <li>${details2}</li>
                                     <li><svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <circle cx="4" cy="4" r="4" fill="#C1C7D0"></circle>
                                         </svg>
                                     </li>
-                                    <li>2015</li>
+                                    <li>${details3}</li>
                                 </ul>
-                                <img src="images/Snapshoot Portfolio.png"/>`
+                                <img src= "${images}"/>`
                
     cardContent3.innerHTML = `
-                                <div class="project-card-content3-text"><p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s. Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                                    <br><br>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s
-                                    with the releawn printer took a galley of type and scrambled it 1960s.</p>
+                                <div class="project-card-content3-text"><p>${description}</p>
                                 </div>
                                 <div class="project-card-content3-link">
                                     <ul>
-                                        <li>HTML</li>
-                                        <li>CSS</li>
-                                        <li>JavaScript</li>
-                                        <li>Ruby</li>
-                                        <li>Bootstrap</li>
+                                        <li>${languages1}</li>
+                                        <li>${languages2}</li>
+                                        <li>${languages3}</li>
                                     </ul>
 
                                     <div class="btn-live-source">
-                                        <button>See Live <img src= "images/see-live.png"/></button>
-                                        <button>See Source  <i class="fab fa-github"></i> </button>
+                                        <a href = ${live}>See Live <img src= "images/see-live.png"/></a>
+                                        <a href= ${source}>See Source  <i class="fab fa-github"></i> </a>
                                     </div>
                                 </div>`
     cardContainer.appendChild(cardContent1)
