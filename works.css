@@ -4,8 +4,6 @@
   padding: 10%;
   display: grid;
   grid-template: auto / 100%;
-
-  /* grid-template-columns: 1fr; */
 }
 
 .card {
@@ -114,7 +112,6 @@
   }
 
   .card-image img {
-    max-height: auto;
     max-width: 100%;
   }
 
