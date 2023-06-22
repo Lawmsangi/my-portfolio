@@ -142,3 +142,30 @@ cardBtn.forEach((item,index)=>{
     })
     
 })
+
+
+//local storage
+const inputName = document.querySelector('#name');
+const inputEmail = document.querySelector('#email');
+const inputMsg = document.querySelector('#textarea');
+
+function storageFormData(){
+  const formData = {
+    name: inputName.value,
+    email: inputEmail.value,
+    message: inputMsg.value
+  }
+  localStorage.setItem('formData',JSON.stringify(formData));
+}
+
+const inputArr = [inputName, inputEmail, inputMsg]
+inputArr.forEach(input =>{
+  input.addEventListener('input', storageFormData)
+});
+
+const storagedData = JSON.parse(localStorage.getItem('formData'));
+if(storagedData){
+  inputName = storagedData.name;
+  inputEmail = storagedData.email;
+  inputMsg = storagedData.message;
+}
