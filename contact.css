@@ -53,6 +53,7 @@
   gap: 10px;
   border-radius: 8px;
   border: 1px solid #cfd8dc;
+  outline: none;
   margin-bottom: 10px;
   padding-left: 10px;
   font-size: 17px;
@@ -67,6 +68,7 @@
   padding: 10px 12px;
   box-sizing: border-box;
   border: 1px solid #cfd8dc;
+  outline: none;
   border-radius: 8px;
   font-size: 15px;
   line-height: 24px;
@@ -99,6 +101,13 @@
   border: 1px solid #7f8cff;
   color: #fff;
   background: #2230d2;
+}
+
+#error-msg {
+  color: red;
+  font-size: 1.2rem;
+  font-weight: 500;
+  visibility: hidden;
 }
 
 @media screen and (min-width: 768px) {

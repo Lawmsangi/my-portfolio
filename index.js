@@ -182,7 +182,50 @@ projects.forEach((project, index) => {
     e.preventDefault();
     seeProject(index);
   });
-  projectCard.appendChild(cardImage);
-  projectCard.appendChild(cardContent);
-  workSec.appendChild(projectCard);
+});
+
+// Validate form
+const form = document.querySelector('#contact-form');
+
+const isRequired = (value) => value !== '';
+
+const isEmailValid = (email) => {
+  const re = /^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,4})$/;
+  return re.test(email);
+};
+
+const showError = (input, message) => {
+  const errorMsg = document.querySelector('#error-msg');
+  errorMsg.textContent = message;
+};
+
+const showSuccess = () => {
+  const errorMsg = document.querySelector('#error-msg');
+  errorMsg.textContent = '';
+};
+const checkEmail = () => {
+  const userEmail = document.querySelector('#email');
+  let valid = false;
+  const email = userEmail.value.trim();
+  if (!isRequired(email)) {
+    showError(userEmail, 'Email cannot be blank.');
+  } else if (!isEmailValid(email)) {
+    showError(userEmail, 'Email should be in lowercase.');
+  } else {
+    showSuccess(userEmail);
+    valid = true;
+  }
+  return valid;
+};
+
+form.addEventListener('submit', (e) => {
+  e.preventDefault();
+  const isEmailValid = checkEmail();
+
+  if (isEmailValid) {
+    form.submit();
+  } else {
+    const errorMsg = document.querySelector('#error-msg');
+    errorMsg.style.visibility = 'visible';
+  }
 });
