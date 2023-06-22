@@ -229,4 +229,3 @@ form.addEventListener('submit', (e) => {
     errorMsg.style.visibility = 'visible';
   }
 });
-
