@@ -159,12 +159,11 @@ const showError = (input, message) => {
 };
 
 const showSuccess = () => {
-  // hide the error message
   const errorMsg = document.querySelector('#error-msg');
   errorMsg.textContent = '';
 };
 const checkEmail = () => {
-    const userEmail = document.querySelector('#email');
+  const userEmail = document.querySelector('#email');
   let valid = false;
   const email = userEmail.value.trim();
   if (!isRequired(email)) {
@@ -186,6 +185,6 @@ form.addEventListener('submit', (e) => {
     form.submit();
   } else {
     const errorMsg = document.querySelector('#error-msg');
-    errorMsg.style.visibility ='visible';
+    errorMsg.style.visibility = 'visible';
   }
 });
