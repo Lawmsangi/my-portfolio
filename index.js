@@ -1,10 +1,12 @@
+// menu variables
 const btn = document.getElementById('btn-union');
 const close = document.getElementById('menu-close');
 const menuBg = document.getElementById('menu-bg');
 const menu = document.getElementById('menu');
 const home = document.getElementById('home-section');
 const header = document.getElementById('header');
-const cardBtn = document.querySelectorAll('.card-btn');
+
+// project variables
 const workSec = document.getElementById('work-section');
 const projects = [
   {
@@ -49,6 +51,7 @@ const projects = [
   },
 ];
 
+// menu functions
 btn.addEventListener('click', () => {
   menu.style.display = 'block';
   menuBg.style.display = 'block';
@@ -68,7 +71,7 @@ close.addEventListener('click', closedMenu);
 
 menu.addEventListener('click', closedMenu);
 
-// See Project
+// project functions
 function closeProject() {
   const project = document.querySelector('.project-card-container');
   project.remove();
@@ -136,8 +139,46 @@ function seeProject(index) {
   document.body.appendChild(cardContainer);
 }
 
-cardBtn.forEach((item, index) => {
-  item.addEventListener('click', (e) => {
+projects.forEach((project, index) => {
+  const {
+    title, details, languages, description, images,
+  } = projects[index];
+  const [details1, details2, details3] = details;
+  const [languages1, languages2, languages3] = languages;
+  const projectCard = document.createElement('div');
+  projectCard.className = 'card';
+  const cardImage = document.createElement('div');
+  cardImage.className = 'card-image';
+  cardImage.innerHTML = ` <img src="${images}" alt="work-1"> `;
+  const cardContent = document.createElement('div');
+  cardContent.className = 'card-content';
+  cardContent.innerHTML = `
+                    <h2>${title}</h2>
+                    <ul class="card-list1">
+                        <li>${details1}</li>
+                        <li><svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="4" cy="4" r="4" fill="#C1C7D0"></circle>
+                            </svg>
+                        </li>
+                        <li>${details2}</li>
+                        <li><svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="4" cy="4" r="4" fill="#C1C7D0"></circle>
+                            </svg>
+                        </li>
+                        <li>${details3}</li>
+                    </ul>
+                    <p>${description}</p>
+                    <ul class="card-list2">
+                        <li>${languages1}</li>
+                        <li>${languages2}</li>
+                        <li>${languages3}</li>
+                    </ul>
+                `;
+  const seeProjectBtn = document.createElement('button');
+  seeProjectBtn.className = 'card-btn';
+  seeProjectBtn.innerHTML = 'See Project';
+  cardContent.appendChild(seeProjectBtn);
+  seeProjectBtn.addEventListener('click', (e) => {
     e.preventDefault();
     seeProject(index);
   });
@@ -188,3 +229,4 @@ form.addEventListener('submit', (e) => {
     errorMsg.style.visibility = 'visible';
   }
 });
+
