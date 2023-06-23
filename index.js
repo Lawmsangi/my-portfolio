@@ -243,3 +243,15 @@ function storageFormData(){
   }
   localStorage.setItem('formData',JSON.stringify(formData));
 }
+
+const inputArr = [inputName, inputEmail, inputMsg]
+inputArr.forEach(input =>{
+  input.addEventListener('input', storageFormData)
+});
+
+const savedData = JSON.parse(localStorage.getItem('formData'));
+if(savedData){
+  inputName.value = savedData.name;
+  inputEmail.value = savedData.email;
+  inputMsg.value = savedData.message;
+}
