@@ -229,3 +229,17 @@ form.addEventListener('submit', (e) => {
     errorMsg.style.visibility = 'visible';
   }
 });
+
+//local storage
+const inputName = document.querySelector('#name');
+const inputEmail = document.querySelector('#email');
+const inputMsg = document.querySelector('#textarea');
+
+function storageFormData(){
+  const formData = {
+    name: inputName.value,
+    email: inputEmail.value,
+    message: inputMsg.value
+  }
+  localStorage.setItem('formData',JSON.stringify(formData));
+}
