@@ -182,6 +182,9 @@ projects.forEach((project, index) => {
     e.preventDefault();
     seeProject(index);
   });
+  projectCard.appendChild(cardImage);
+  projectCard.appendChild(cardContent);
+  workSec.appendChild(projectCard);
 });
 
 // Validate form
