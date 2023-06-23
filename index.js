@@ -221,7 +221,7 @@ const checkEmail = () => {
   return valid;
 };
 
-form.addEventListener('submit', (e) => {
+form.addEventListener('input', (e) => {
   e.preventDefault();
   const isEmailValid = checkEmail();
 
