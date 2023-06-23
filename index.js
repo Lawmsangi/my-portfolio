@@ -230,27 +230,27 @@ form.addEventListener('submit', (e) => {
   }
 });
 
-//local storage
+// local storage
 const inputName = document.querySelector('#name');
 const inputEmail = document.querySelector('#email');
 const inputMsg = document.querySelector('#textarea');
 
-function storageFormData(){
+function storageFormData() {
   const formData = {
     name: inputName.value,
     email: inputEmail.value,
-    message: inputMsg.value
-  }
-  localStorage.setItem('formData',JSON.stringify(formData));
+    message: inputMsg.value,
+  };
+  localStorage.setItem('formData', JSON.stringify(formData));
 }
 
-const inputArr = [inputName, inputEmail, inputMsg]
-inputArr.forEach(input =>{
-  input.addEventListener('input', storageFormData)
+const inputArr = [inputName, inputEmail, inputMsg];
+inputArr.forEach((input) => {
+  input.addEventListener('input', storageFormData);
 });
 
 const savedData = JSON.parse(localStorage.getItem('formData'));
-if(savedData){
+if (savedData) {
   inputName.value = savedData.name;
   inputEmail.value = savedData.email;
   inputMsg.value = savedData.message;
