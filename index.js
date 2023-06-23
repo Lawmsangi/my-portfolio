@@ -165,7 +165,7 @@ inputArr.forEach(input =>{
 
 const storagedData = JSON.parse(localStorage.getItem('formData'));
 if(storagedData){
-  inputName = storagedData.name;
-  inputEmail = storagedData.email;
-  inputMsg = storagedData.message;
+  inputName.value = storagedData.name;
+  inputEmail.value = storagedData.email;
+  inputMsg.value = storagedData.message;
 }
