@@ -10,34 +10,34 @@ const header = document.getElementById('header');
 const workSec = document.getElementById('work-section');
 const projects = [
   {
-    title: 'Tonic',
+    title: 'Online Shopping Site',
     details: ['CANOPY', 'Back&nbsp;End&nbsp;Dev', '2015'],
     description:
-        'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-    languages: ['html', 'css', 'javascript'],
-    images: 'images/work-1.png',
-    live: '#',
-    source: '#',
+        'My portfolio website builds with HTML and CSS and is available in desktop, mobile and tablet version',
+    languages: ['html', 'css','javascript'],
+    images: 'images/work-5.png',
+    live: 'https://lawmsangi.github.io/Module-One-Capstone/',
+    source: 'https://github.com/Lawmsangi/Module-One-Capstone',
   },
   {
-    title: 'Multi-Post Stories',
+    title: 'Book Lists',
     details: ['Facebook', 'Full&nbsp;Stack&nbsp;Dev', '2015'],
     description:
-        'Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.',
-    languages: ['html', 'Ruby on rails', 'css'],
-    images: 'images/work-2.png',
-    live: '#',
-    source: '',
+        'Bookstore where you can add books and remove it. Built using HTML, CSS and JavaScript.',
+    languages: ['html', 'javascript', 'css'],
+    images: 'images/work-6.png',
+    live: 'https://lawmsangi.github.io/Awesome-books/',
+    source: 'https://github.com/Lawmsangi/Awesome-books/',
   },
   {
-    title: 'Facebook 360',
+    title: 'To Do List',
     details: ['FACEBOOK', 'Back&nbsp;End&nbsp;Dev', '2015'],
     description:
-        "Exploring the future of media in Facebook's first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.",
-    languages: ['html', 'Ruby on rails', 'css'],
-    images: 'images/work-3.png',
-    live: '#',
-    source: '',
+        "To-do-list is an website where you can add, remove and edit the tasks. Built using HTML, CSS and JavaScript.",
+    languages: ['html', 'javascript', 'css'],
+    images: 'images/work-7.png',
+    live: 'https://lawmsangi.github.io/To-Do-List-JS/dist/',
+    source: 'https://github.com/Lawmsangi/To-Do-List-JS',
   },
   {
     title: 'Uber Navigation',
