@@ -14,7 +14,6 @@
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
   - [🚀 Live Demo](#live-demo)
-  - [🎥 Live Video](#live-video)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
@@ -62,14 +61,6 @@
 - [Live Demo Link](https://lawmsangi.github.io/my-portfolio/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- LIVE VIDEO -->
-
-## 🚀 Live Video <a name="live-video"></a>
-- [Live Video Link](https://www.loom.com/share/0f23f8da07854e7599b580cfdcea359a)
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 
 <!-- GETTING STARTED -->
 
