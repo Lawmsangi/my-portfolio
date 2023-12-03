@@ -31,7 +31,7 @@ const projects = [
   },
   {
     title: 'To Do List',
-    details: ['FACEBOOK', 'Back&nbsp;End&nbsp;Dev', '2015'],
+    details: ['Todo List', 'Frontend&nbsp;End&nbsp;Dev', '2023'],
     description:
         "To-do-list is an website where you can add, remove and edit the tasks. Built using HTML, CSS and JavaScript.",
     languages: ['html', 'javascript', 'css'],
@@ -40,14 +40,14 @@ const projects = [
     source: 'https://github.com/Lawmsangi/To-Do-List-JS',
   },
   {
-    title: 'Uber Navigation',
-    details: ['Uber', 'Lead&nbsp;Developer', '2015'],
+    title: 'Pokemon Web App',
+    details: ['Pokemon', 'Frontend&nbsp;Developer', '2023'],
     description:
-        'A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car.',
-    languages: ['html', 'Ruby on rails', 'css'],
+        'A web app built with pokemon api that shows different pokemons where you can give likes and comments to each Pokemon.',
+    languages: ['API', 'WebPack', 'Javascript'],
     images: 'images/work-4.png',
-    live: '#',
-    source: '',
+    live: 'https://lawmsangi.github.io/pokemon-api-project/dist/',
+    source: 'https://github.com/Lawmsangi/pokemon-api-project',
   },
 ];
 
