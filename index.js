@@ -49,6 +49,16 @@ const projects = [
     live: 'https://lawmsangi.github.io/pokemon-api-project/dist/',
     source: 'https://github.com/Lawmsangi/pokemon-api-project',
   },
+    {
+    title: 'Budget App',
+    details: ['Finance', 'Rails&nbsp;Developer', '2024'],
+    description:
+        'The Budget app is a mobile web application where you can manage your budget: you have a list of transactions associated with a category, so that you can see how much money you spent and on what.',
+    languages: ['Rails', 'Ruby', 'Bootstrap'],
+    images: 'images/work-8.png',
+    live: 'https://my-budget-app-1tru.onrender.com/',
+    source: 'https://github.com/Lawmsangi/budget-app',
+  },
 ];
 
 // menu functions
